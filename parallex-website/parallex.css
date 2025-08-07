@@ -11,10 +11,10 @@
 .wrapper {
     width: 100vw;
     height: 100vh;
-/* add scroll  here because you have perspective in here. [core concept of parallex] */
+    /* add scroll  here because you have perspective in here. [core concept of parallex] */
     overflow-y: auto;
-    
-    /* to get the 3d effect */
+
+    /* to get the 3d children to work */
     perspective: 100px;
 }
 
@@ -26,6 +26,7 @@
     align-items: center;
     position: relative;
     z-index: -1;
+
     /* so the effect can be used  */
     /* ✅ Put perspective on the parent that scrolls */
     /* ✅ Put transform-style: preserve-3d on the container that holds the 3D-layered elements */
@@ -42,11 +43,16 @@
 }
 
 .ballon {
-    transform: translate3d(-1px)scale(1.3);
+    /* 
+    translateY(...) is not in CSS — Because it's dynamic – tied to scroll position
+    Use JS to apply it — So it updates with scroll 
+    */
+    transform: scale(1.3);
 }
 
 .mountain {
-    transform: translateZ(-1000px)scale(1.4);
+    /* this is the 3D effect — keep this in JS too */
+    transform: translateZ(-1000px) scale(1.4);
 }
 
 #heading {
