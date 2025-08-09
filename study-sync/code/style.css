@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* remove underline */
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.wrapper {
+    overflow-x: none;
+    height: 100vh;
+    height: 100vh;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 2rem;
+
+}
+.header-content{
+max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+     
+
+}
