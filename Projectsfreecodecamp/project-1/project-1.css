@@ -1,0 +1,75 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.button-border{
+background: linear-gradient(115deg,purple,blue);
+padding:2px;
+border-radius: 10px;
+transition: all 1s ease-in;
+
+}
+.button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 1em 1.5em;
+    letter-spacing: .1em;
+    font-family: 'Courier New', Courier, monospace;
+border-radius: inherit;
+transition: all 1s linear;
+
+}
+.button-border:hover{
+ background: linear-gradient(230deg ,rgb(193, 22, 193),blue);
+}
+.button{
+    cursor: pointer;
+
+} */
+ *{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+ }
+ .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .button-border{
+background: linear-gradient(115deg ,purple ,blue);
+border-radius: 10px;
+padding: 2px;
+box-sizing: border-box;
+transition: all 1s ease-in;
+
+}
+.button{
+    border-radius: inherit;
+    border: none;
+    color: white;
+    padding: 2px;
+    letter-spacing: .1em;
+    font-family:sans-serif ;
+    font-weight: bold; 
+    transition: all 1s ease-in;
+}
+.button:hover{
+cursor: pointer;
+transform: translate(2px);
+} 
+.button-border:hover{
+    background: linear-gradient(230deg ,rgb(193, 22, 193),blue);
+}
